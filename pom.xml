@@ -91,5 +91,13 @@
             <artifactId>spring-test</artifactId>
             <version>5.2.6.RELEASE</version>
         </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <!-- 运行时提供jar包支持, 打包时不需要,因为实际运行泡在tomocat中, tomcat中自带-->
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>
