@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+
+    <!-- 设置变量。定义变量后，可以使“${}”来使用变量。 -->
+    <property name="CONSOLE_LOG_PATTERN"
+              value="%red(%date{yyyy-MM-dd HH:mm:ss}) %highlight(%-5level) %red([%thread]) %boldMagenta(%logger{50}) %cyan(%msg%n)"/>
+
+    <!-- 直接向控制台输出   -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- 编码器，向控制台输出的日志的格式 -->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!-- 这里的pattern的取值也可以先定义,然后使用${xx}-->
+<!--            <pattern>%d{HH:mm:ss} %-5level [%thread] %logger{30} - %msg%n</pattern>-->
+
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="console"/>
+    </root>
+</configuration>
