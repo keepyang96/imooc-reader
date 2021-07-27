@@ -99,5 +99,12 @@
             <!-- 运行时提供jar包支持, 打包时不需要,因为实际运行泡在tomocat中, tomcat中自带-->
             <scope>provided</scope>
         </dependency>
+
+        <!-- logback依赖 spring 可以自动识别logback-->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.4</version>
+        </dependency>
     </dependencies>
 </project>
