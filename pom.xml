@@ -106,7 +106,7 @@
             <artifactId>logback-classic</artifactId>
             <version>1.2.4</version>
         </dependency>
-
+        <!-- mp -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus</artifactId>
