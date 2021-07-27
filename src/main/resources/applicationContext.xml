@@ -78,7 +78,12 @@
     </bean>
     <!-- 通过IOC容器初始化的过程中自动的实例化SqlSessionFactory对象-->
     <!-- SqlSessionFactoryBean 用于根据配置信息创建SqlSessionFactory,不需要我们编码创建，创建的SqlSessionFactory会被IOC容器进行管理，诸如日志管理,声明式事务都可以运用在mybatis的组件上-->
-    <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+<!--  原生mybatis和spring整合
+<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+-->
+
+    <!-- mp 与 spring 整合 -->
+    <bean id="sessionFactory" class="com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="mapperLocations" value="classpath:mappers/*.xml"/>
         <!-- 指定mybatis配置文件所在的地址 : 不是必须的-->
