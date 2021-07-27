@@ -7,6 +7,6 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 .idea
+target/
 imooc-reader.iml
 out
-target
