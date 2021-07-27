@@ -51,6 +51,7 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.11.0</version>
         </dependency>
+
         <!-- mybatis整合spring -->
         <!-- 因为mybatis底层使用jdbc,spring-jdbc对jdbc进行了封装和扩展,整合过程中必须要引入-->
         <dependency>
@@ -78,6 +79,17 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.1.14</version>
+        </dependency>
+        <!-- 单元测试依赖 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.2.6.RELEASE</version>
         </dependency>
     </dependencies>
 </project>
